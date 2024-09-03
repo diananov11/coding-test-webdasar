@@ -1,14 +1,13 @@
 let arr = [8, 3, 9, 2, 5];
-let value = arr[0];
+
 function searchNumber(number) {
   for (let i = 0; i < arr.length; i++) {
     if (number === arr[i]) {
-      console.log(arr[i]);
       number = arr[i];
-    } else if (number !== arr[i]) {
+    } else if ((number = arr[i])) {
       number = false;
     } else if (!isNan(number)) {
-      number = "not a number";
+      number = "inputan harus number";
     }
   }
   return number;
