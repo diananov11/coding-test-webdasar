@@ -7,7 +7,7 @@ function searchNumber(number) {
       number = arr[i];
     } else if (number !== arr[i]) {
       number = false;
-    } else if (Nan) {
+    } else if (!isNan(number)) {
       number = "not a number";
     }
   }
