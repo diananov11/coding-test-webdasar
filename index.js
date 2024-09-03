@@ -4,6 +4,8 @@ function searchNumber(number) {
   for (let i = 0; i < arr.length; i++) {
     if (number === arr[i]) {
       number = arr[i];
+    } else if (number !== arr[i]) {
+      number = false;
     }
   }
   return number;
